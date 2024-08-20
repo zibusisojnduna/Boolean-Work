@@ -1,8 +1,5 @@
-# React + Vite
+<img src="https://socialify.git.ci/zibusisojnduna/Boolean-Work/image?language=1&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark" alt="Boolean-Work" width="640" height="320" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1>Boolean Work</h1>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p>This was created to hone skills about boolean, if statements, true and false etc.</p>
