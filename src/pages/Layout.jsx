@@ -7,7 +7,7 @@ export default function Layout() {
 
       <>
         <Nav/>
-        <p>Hi</p>
+      
         <Outlet/>
         <Footer/>
       </>

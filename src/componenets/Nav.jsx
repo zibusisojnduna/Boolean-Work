@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 export default function Nav() {
   return (
-    <div class="w3-bar w3-blue">
-  <Link to={"/"} class="w3-bar-item w3-button">Home</Link>
-  <Link to={"/TrafficLight"} class="w3-bar-item w3-button">Traffic Light</Link>
-  <Link to={"/Exercises"} class="w3-bar-item w3-button">Exercises</Link>
-  <Link to={"/NoPage"} class="w3-bar-item w3-button">Settings</Link>
+    <div className="w3-bar w3-blue">
+  <Link to={"/"} className="w3-bar-item w3-button">Home</Link>
+  <Link to={"/TrafficLight"} className="w3-bar-item w3-button">Traffic Light</Link>
+  <Link to={"/Exercises"} className="w3-bar-item w3-button">Exercises</Link>
+  <Link to={"/NoPage"} className="w3-bar-item w3-button">Settings</Link>
 </div>
   )
 }
