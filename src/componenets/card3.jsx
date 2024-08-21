@@ -1,21 +1,11 @@
-import React from "react"
-import { useState } from "react"
+import React from "react";
+import { useState } from "react";
 
-function CardTwo(){
+function Card3(){
     const [number, setNumber] = useState("")
     const [result, setResult] = useState("")
 
-    const checkEvenOdd = () => {
-        const num = parseFloat(number)
-
-        if (isNaN(num)){
-            setResult("Please enter a valid")
-        }else if (num % 2 == 0){
-            setResult("Is an even number.")
-        }else{
-            setResult("Is an odd number.")
-        }
-    }
+    const daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday"]
     return(
         <div className="w3-card-4" style={{width:"50%", padding:"1cm"}}>
             <header className="w3-card-4" style={{backgroundColor:"green", color:"white", padding:"1cm"}}>
@@ -31,4 +21,3 @@ function CardTwo(){
         </div>
     )
 }
-export default CardTwo
