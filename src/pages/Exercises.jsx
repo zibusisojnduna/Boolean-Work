@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../componenets/card'
 import CardTwo from '../componenets/card2'
+import Card3 from '../componenets/card3'
 
 
 export default function Exercises() {
@@ -12,6 +13,7 @@ export default function Exercises() {
       <div style={{display:"flex"}}>
         <Card/>
         <CardTwo/>
+        <Card3/>
       </div> 
     </section>
     
