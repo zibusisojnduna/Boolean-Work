@@ -8,6 +8,7 @@ import NoPage from './pages/NoPage'
 import TrafficLight from './pages/TrafficLight'
 import Exercises from './pages/Exercises'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Card from './componenets/card'
 
 function App() {
   const [count, setCount] = useState(0)
