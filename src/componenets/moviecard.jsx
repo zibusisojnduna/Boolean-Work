@@ -8,7 +8,7 @@ import MoreInfo from "../pages/movieView.jsx"
 
 function MovieCard({film}){
 
-console.log(film.imageUrl)
+
 
 
     return(

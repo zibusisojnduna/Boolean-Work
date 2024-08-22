@@ -11,6 +11,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Card from './componenets/card'
 import ContactUs from './pages/ContactUs'
 import MoviesPage from './pages/Movies'
+import MoreInfo from './pages/movieView'
+import movies from './assets/movies'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +26,7 @@ function App() {
         <Route path='Exercises' element={<Exercises/>}/>
         <Route path='Movies' element={<MoviesPage/>}/>
         <Route path='ContactUs' element={<ContactUs/>}/>
+        <Route path='movieView' element={<MoreInfo/>}/>
         <Route path='NoPage' element={<NoPage/>}/>
 
         </Route>
