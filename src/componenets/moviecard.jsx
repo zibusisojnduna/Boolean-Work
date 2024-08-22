@@ -1,26 +1,34 @@
 import React from "react"
 import { useState } from "react"
-import movies from "../assets/movies"
+
 import { RiStarSFill } from "react-icons/ri"
+import { Link } from "react-router-dom"
+import MoreInfo from "../pages/movieView.jsx"
 
-function MovieCard(){
 
-let film = movies
+function MovieCard({film}){
+
+console.log(film.imageUrl)
+
 
     return(
-        <div className="w3-card-4" style={{width:"50%", padding:"1cm"}}>
-            <div style={require=(film.imageUrl)}></div>
-
+        <div className="w3-card-4" style={{width:"30%", backgroundColor:"lightskyblue", margin:"1%", height:"10%" }}>
+            
             <div>
-                <h4 style={{color:"white"}}>{film.title}</h4><br></br>
-                <h4 style={{color:"white"}}>By {film.director}</h4><br></br>
-                <h4 style={{color:"white"}}>Year of release: {film.year}</h4><br></br>
-                <h4 style={{color:"white"}}>Genre: {film.genre}</h4>
-                <h4 style={{color:"white"}}><RiStarSFill/>Rating: {film.rating}</h4><br></br>
+                <img src={require(film.imageUrl)} alt="image" style={{height:"100%", width:"100%"}}></img>
+            </div>
+
+            <div style={{padding:"2%"}}>
+                <h1 style={{fontWeight:"bold"}}>{film.title}</h1>
+                <h4>Director: {film.director}</h4>
+                <h4>Year of release: {film.year}</h4>
+                <h4>Genre: {film.genre}</h4>
+                <h4><RiStarSFill/>Rating: {film.rating}</h4>
+                
             </div>
 
             <div>
-                <h4 style={{color:"white"}}>Description: {film.description}</h4>
+                <button><Link to={"../pages/movieView.jsx"}/>Read More</button>
             </div>
         </div>
 
