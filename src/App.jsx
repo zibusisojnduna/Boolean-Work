@@ -2,13 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './pages/home'
+import Home from './pages/Home'
 import Layout from './pages/layout'
 import NoPage from './pages/NoPage'
 import TrafficLight from './pages/TrafficLight'
 import Exercises from './pages/Exercises'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Card from './componenets/card'
+import ContactUs from './pages/ContactUs'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path='TrafficLight' element={<TrafficLight/>}/>
         <Route path='Exercises' element={<Exercises/>}/>
+        <Route path='ContactUs' element={<ContactUs/>}/>
         <Route path='NoPage' element={<NoPage/>}/>
 
         </Route>
