@@ -14,7 +14,7 @@ export default function ContactUs() {
       </div>
 
       <div style={{backgroundColor:"lightskyblue", width:"100%", height:"100%"}}>
-        <form>
+        <form style={{textAlign:"center"}}>
           <h1>Feel free to get in touch!</h1>
 
           <h2>Name</h2><br></br>

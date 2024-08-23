@@ -6,9 +6,9 @@ function MoreInfo(){
     
 
     return(
-     <div>
+     <div style={{textAlign:"center"}}>
          <div>
-        <img src={require(movies[0].imageUrl)} alt="image" height={"50%"} width={"100%"} ></img>
+        <img src={require(movies[0].imageUrl)} alt="image" height={""} width={"100%"} ></img>
         </div>
 
         <div>
