@@ -1,28 +1,39 @@
 import React from "react";
 import movies from "../assets/movies";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+
+
+
 
 function MoreInfo(){
 
+    const {id} = useParams()
     
+
+
 
     return(
      <div style={{textAlign:"center"}}>
          <div>
-        <img src={require(movies[0].imageUrl)} alt="image" height={""} width={"100%"} ></img>
+        <img src={require(movies[id].imageUrl)} alt="image" height={""} width={"100%"} ></img>
         </div>
 
         <div>
-            <h1 style={{fontWeight:'bold'}}>{movies[0].title}</h1>
-            <h2>{movies[0].director}</h2>
-            <h2>{movies[0].year}</h2>
-            <h2>{movies[0].genre}</h2>
-            <h2>{movies[0].rating}</h2>
+            <h1 style={{fontWeight:'bold'}}>{movies[id].title}</h1>
+            <h2>{movies[id].director}</h2>
+            <h2>{movies[id].year}</h2>
+            <h2>{movies[id].genre}</h2>
+            <h2>{movies[id].rating}</h2>
 
         </div>
 
         <div>
-            <h2>{movies[0].description}</h2>
+            <h2>{movies[id].description}</h2>
         </div>
+
+        <button style={{padding:"1%"}}><Link to={"../Movies"}/>Back</button>
 
     </div>
    

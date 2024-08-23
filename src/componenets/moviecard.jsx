@@ -28,7 +28,7 @@ function MovieCard({film}){
             </div>
 
             <div>
-                <button><Link to={"../pages/movieView.jsx"}/>Read More</button>
+                <button><Link to={`${film.id}`}/>Read More</button>
             </div>
         </div>
 

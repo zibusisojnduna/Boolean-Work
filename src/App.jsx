@@ -24,9 +24,11 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path='TrafficLight' element={<TrafficLight/>}/>
         <Route path='Exercises' element={<Exercises/>}/>
-        <Route path='Movies' element={<MoviesPage/>}/>
+        <Route path='Movies'>
+          <Route index element={<MoviesPage/>}/>
+          <Route path=':id' element={<MoreInfo/>}/>
+        </Route>
         <Route path='ContactUs' element={<ContactUs/>}/>
-        <Route path='movieView' element={<MoreInfo/>}/>
         <Route path='NoPage' element={<NoPage/>}/>
 
         </Route>
